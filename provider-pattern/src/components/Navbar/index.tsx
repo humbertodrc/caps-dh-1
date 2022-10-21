@@ -1,8 +1,18 @@
-import { useContext } from "react";
-import { UserContext } from "../../context/UserContext";
 
 const Navbar = () => {
-  const { user, login, logout } = useContext(UserContext);
+  
+  const user = {
+    id: 1,
+    name: "John Doe",
+  }
+
+  const logout = () => {
+    console.log("logout");
+  }
+
+  const login = () => {
+    console.log("login");
+  }
 
   return (
     <nav>

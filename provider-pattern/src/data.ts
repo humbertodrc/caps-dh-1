@@ -1,4 +1,4 @@
-[
+export const characters = [
   {
     "id": 1,
     "title": "Rick Sanchez",

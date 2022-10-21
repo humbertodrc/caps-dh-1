@@ -1,5 +1,3 @@
-import React, { useContext } from "react";
-import { UserContext } from "../../context/UserContext";
 
 interface PictureProps {
   character: {
@@ -11,8 +9,17 @@ interface PictureProps {
 }
 
 const Picture = ({ character }: PictureProps) => {
-  const { user, favoriteCharacterUser } = useContext(UserContext);
-  const isFavorite = user?.favoriteCharacters?.includes(character.id);
+  
+  const user = {
+    id: 1,
+    name: "John Doe",
+  }
+
+  const isFavorite = false
+
+  const favoriteCharacterUser = (characterId : any) => {
+    console.log(characterId);
+  }
 
   return (
     <article>

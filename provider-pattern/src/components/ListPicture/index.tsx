@@ -1,9 +1,9 @@
-import { useContext } from "react";
-import { CharactersContext } from "../../context/CharacterContext";
+import { characters } from '../../data';
 import Picture from '../Picture';
 
 const ListPicture = () => {
-  const { characters } = useContext(CharactersContext);
+
+
 
   return (
     <section>
