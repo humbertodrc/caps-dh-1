@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FC } from "react";
 
-const Input = ({ handleSubmit, handleChange }) => {
+const Input: FC = ({ handleSubmit, handleChange }: any) => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
@@ -9,7 +9,7 @@ const Input = ({ handleSubmit, handleChange }) => {
           onChange={handleChange}
           placeholder="Digite um número"
         />
-        <button input="submit">Buscar personagem</button>
+        <button type="submit">Buscar personagem</button>
       </label>
     </form>
   );
