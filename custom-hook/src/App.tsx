@@ -1,8 +1,15 @@
 import Character from './components/Character';
-import useCounter from "./hooks/useCounter";
 
 const App = () => {
-  const { count, increment, decrement } = useCounter();
+  const count = 1
+
+  const increment = () => {
+    console.log('increment');
+  }
+
+  const decrement = () => {
+    console.log('decrement');
+  }
 
   return (
     <article className="App">
